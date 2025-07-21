@@ -1,0 +1,8 @@
+int funcn(int n)
+{
+if(n==0)
+return 0;
+else
+return n+funcn(n-1);
+
+}

@@ -1,0 +1,5 @@
+Function(N){
+if(N==0)
+return 0;
+return Function(N/10)+(N%10);
+}
