@@ -1,0 +1,13 @@
+int rev(int n, int rev)
+{
+if(n==0) return rev;
+int lastdigit=n%10;
+rev=rev*10+lastdigit;
+return rev(n/10,rev);
+}
+
+int powN(int n)
+{
+int reversedNum=rev(n,0);
+return pow(n,reversedNum);
+}
